@@ -1,0 +1,6 @@
+# Ignorar todo
+*
+
+# Excepto act6
+!act6/
+!act6/providers.tf

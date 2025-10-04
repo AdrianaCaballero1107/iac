@@ -1,0 +1,12 @@
+# Archivos de entorno
+*.env
+
+# Estado y plan de Terraform
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Carpeta de Terraform con plugins
+.terraform/
+
+
