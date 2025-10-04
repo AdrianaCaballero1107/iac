@@ -24,3 +24,5 @@ actividad4/.terraform/
 # Ignorar archivos de estado de Terraform
 *.tfstate
 *.tfstate.backup
+# Ignorar archivos de configuración con claves
+*.env
