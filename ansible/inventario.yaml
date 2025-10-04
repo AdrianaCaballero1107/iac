@@ -1,0 +1,17 @@
+#myhosts:  
+ # hosts:
+  #  my_hosts_01:
+   #   ansible_host: 8.8.8.8
+   # my_hosts_02:
+    #  ansible_host: 8.8.8.8
+    #my_hosts_03: 
+     # ansible_host: 8.8.8.8 
+
+all:
+  hosts:
+    my_hosts_01:
+     ansible_connection: local
+      
+
+
+

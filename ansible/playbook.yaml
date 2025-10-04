@@ -1,0 +1,9 @@
+- name: My first play
+  hosts: all #lo cambie a all, porque asi hice mi consulta de ping
+  tasks:
+    - name: Ping my hosts
+      ansible.builtin.ping:
+
+    - name: Print message
+      ansible.builtin.debug:
+        msg: "Hola Adri, este es mi primer playbook"
