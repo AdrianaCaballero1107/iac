@@ -1,0 +1,26 @@
+# Ignorar providers de Terraform
+actividad3/.terraform/
+actividad4/.terraform/
+
+# Ignorar archivos locales temporales de VS Code
+.vscode/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
+# Ignorar providers de Terraform
+actividad3/.terraform/
+actividad4/.terraform/
+
+# Ignorar archivos locales temporales de VS Code
+.vscode/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
