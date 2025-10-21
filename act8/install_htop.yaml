@@ -1,0 +1,33 @@
+- name: Install htop and Apache
+  hosts: all
+  connection: local
+  become: true
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install htop
+      apt:
+        name: htop
+        state: present
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Ensure Apache is started and enabled
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Verify Apache is running
+      command: systemctl is-active apache2
+      register: apache_status
+      changed_when: false
+
+    - name: Show Apache status
+      debug:
+        msg: "Apache status: {{ apache_status.stdout }}"
